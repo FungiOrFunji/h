@@ -1,3 +1,4 @@
+npm i -g npx
 PACKAGE_VERSION=$(node -p -e "try { require('./package.json').version } catch { '0.0.0' }")
 LATEST_VERSION=$(curl --silent "https://raw.githubusercontent.com/localip/nitro-sniper/main/package.json" | grep '"version":' | sed -E 's/.*"([^"]+)".*/\1/')
 
